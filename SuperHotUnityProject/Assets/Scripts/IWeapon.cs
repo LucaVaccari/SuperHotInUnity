@@ -4,9 +4,9 @@ using UnityEngine;
 
 namespace Digital
 {
-    public interface IPickable
+    public interface IWeapon
     {
-        void PickUp();
+        MonoBehaviour MonoBehaviour { get; }
+        void Action();
     }
 }
-

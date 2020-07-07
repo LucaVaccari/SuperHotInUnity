@@ -13,6 +13,7 @@ namespace Digital
                 [SerializeField] private Transform cam;
 
                 Vector2 moveInput, lookInput;
+                float rotX = 0;
 
                 CharacterController cc;
 
@@ -50,8 +51,13 @@ namespace Digital
                 {
                     if(lookInput.magnitude > .1f)
                     {
-                        transform.Rotate(0, lookInput.x * xSens * Time.unscaledDeltaTime, 0);
-                        cam.Rotate(lookInput.y * ySens * Time.unscaledDeltaTime, 0, 0);
+                        float y = lookInput.x * xSens * Time.unscaledDeltaTime;
+                        rotX += lookInput.y * ySens * Time.unscaledDeltaTime;
+
+                        rotX = Mathf.Clamp(rotX, -85, 85);
+
+                        transform.eulerAngles = new Vector3(0, transform.eulerAngles.y + y, 0);
+                        cam.eulerAngles = new Vector3(rotX, cam.eulerAngles.y, 0);
                     }
                 }
                 private void Move()
