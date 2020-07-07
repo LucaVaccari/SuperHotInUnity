@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4994603078994462}
   - component: {fileID: 33021587213863086}
   - component: {fileID: 23697610053470764}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hammer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88,7 +88,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4314784194266678}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: CINEMA_4D_Editor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -120,7 +120,7 @@ GameObject:
   - component: {fileID: 4414921361581812}
   - component: {fileID: 33504219924516634}
   - component: {fileID: 23749735145796272}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -200,7 +200,7 @@ GameObject:
   - component: {fileID: 324441331}
   - component: {fileID: 324441330}
   - component: {fileID: 324441332}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: M1911
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -250,8 +250,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.0620809, y: 0.14497697, z: 0.24819998}
-  m_Center: {x: 0, y: -0.000787735, z: -0.054566324}
+  m_Size: {x: 0.0620809, y: 0.14497697, z: 0.2597118}
+  m_Center: {x: 0, y: -0.000787735, z: -0.004924993}
 --- !u!114 &324441332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -264,6 +264,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a38a4a4e49b8749458f9b391034591ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 8150781289118866053, guid: 30a6c4a3b73b6c3449eb7284e5104c1a,
+    type: 3}
 --- !u!1 &1748277932983872
 GameObject:
   m_ObjectHideFlags: 0
@@ -275,7 +277,7 @@ GameObject:
   - component: {fileID: 4827498857130004}
   - component: {fileID: 33340791094248084}
   - component: {fileID: 23769447271555568}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: M1911
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -289,7 +291,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1748277932983872}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0.0000023990867}
   m_LocalPosition: {x: -0, y: 0.031, z: -0.029}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -299,7 +301,7 @@ Transform:
   - {fileID: 4414921361581812}
   m_Father: {fileID: 4952727429218122}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -180.00002, z: 0}
 --- !u!33 &33340791094248084
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -358,7 +360,7 @@ GameObject:
   - component: {fileID: 4940302572560388}
   - component: {fileID: 33682271734350378}
   - component: {fileID: 23508060292273042}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Slide
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -437,7 +439,7 @@ GameObject:
   - component: {fileID: 4387031449159434}
   - component: {fileID: 33331485787548414}
   - component: {fileID: 23719986941454460}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Magazin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
