@@ -5,6 +5,8 @@ namespace Digital.Weapons
 {
     public class WeaponObject : MonoBehaviour, IWeapon
     {
+        [SerializeField] GameObject throwParticles;
+
         public MonoBehaviour MonoBehaviour => this;
         public bool Throwed { get; set; }
 
@@ -17,6 +19,7 @@ namespace Digital.Weapons
         {
             if (Throwed)
             {
+                Instantiate(throwParticles, transform.position, Quaternion.identity);
                 Destroy(gameObject);
             }
         }
