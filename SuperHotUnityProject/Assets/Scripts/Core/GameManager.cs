@@ -1,15 +1,10 @@
 ﻿using Digital.Utils;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-namespace Digital
+namespace Digital.Core
 {
-    namespace Core
+    public class GameManager : Singleton<GameManager>
     {
-        public class GameManager : Singleton<GameManager>
-        {
-            public Transform cam;
-        }
+        public Transform cam;
     }
 }

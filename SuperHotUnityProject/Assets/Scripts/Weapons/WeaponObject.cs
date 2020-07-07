@@ -1,26 +1,23 @@
 ﻿using Digital.Core.Player;
 using UnityEngine;
 
-namespace Digital
+namespace Digital.Weapons
 {
-    namespace Weapons
+    public class WeaponObject : MonoBehaviour, IWeapon
     {
-        public class WeaponObject : MonoBehaviour, IWeapon
+        public MonoBehaviour MonoBehaviour => this;
+        public bool Throwed { get; set; }
+
+        public void Action()
         {
-            public MonoBehaviour MonoBehaviour => this;
-            public bool Throwed { get; set; }
+            WeaponHolder.ins.Throw();
+        }
 
-            public void Action()
+        private void OnCollisionEnter(Collision collision)
+        {
+            if (Throwed)
             {
-                WeaponHolder.ins.Throw();
-            }
-
-            private void OnCollisionEnter(Collision collision)
-            {
-                if (Throwed)
-                {
-                    Destroy(gameObject);
-                }
+                Destroy(gameObject);
             }
         }
     }
