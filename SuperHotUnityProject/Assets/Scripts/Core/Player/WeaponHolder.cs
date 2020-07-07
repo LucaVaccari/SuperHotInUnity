@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Digital.Utils;
+using UnityEngine;
 
 namespace Digital
 {
@@ -6,10 +7,11 @@ namespace Digital
     {
         namespace Player
         {
-            public class WeaponHolder : MonoBehaviour
+            public class WeaponHolder : Singleton<WeaponHolder>
             {
                 [SerializeField] private Transform gunHolder;
                 [SerializeField] LayerMask weaponMask;
+                [SerializeField] float throwForce = 10;
 
                 IWeapon currentWeapon;
 
@@ -23,9 +25,16 @@ namespace Digital
 
                     if (Input.GetButtonDown("Action"))
                     {
-                        //shoot
-                        //punch
-                        //possibly throw
+                        if(currentWeapon == null)
+                        {
+                            //punch
+                        }
+                        else
+                        {
+                            //shoot
+                            //possibly throw
+                            currentWeapon.Action();
+                        }
                     }
                     if (Input.GetButtonDown("Throw"))
                     {
@@ -34,6 +43,14 @@ namespace Digital
                         else
                             Throw();
                     }
+                }
+                public void Throw()
+                {
+                    currentWeapon.MonoBehaviour.transform.parent = null;
+                    currentWeapon.MonoBehaviour.GetComponent<Rigidbody>().isKinematic = false;
+                    currentWeapon.MonoBehaviour.GetComponent<Rigidbody>().AddForce(GameManager.ins.cam.forward * throwForce * Time.unscaledDeltaTime, ForceMode.VelocityChange);
+                    currentWeapon.Throwed = true;
+                    currentWeapon = null;
                 }
 
                 private void TryPickUp()
@@ -49,12 +66,6 @@ namespace Digital
                             currentWeapon.MonoBehaviour.GetComponent<Rigidbody>().isKinematic = true;
                         }
                     }
-                }
-                private void Throw()
-                {
-                    currentWeapon.MonoBehaviour.transform.parent = null;
-                    currentWeapon.MonoBehaviour.GetComponent<Rigidbody>().isKinematic = false;
-                    currentWeapon = null;
                 }
             }
         }

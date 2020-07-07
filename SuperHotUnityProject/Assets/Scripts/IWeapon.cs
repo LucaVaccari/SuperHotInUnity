@@ -7,6 +7,8 @@ namespace Digital
     public interface IWeapon
     {
         MonoBehaviour MonoBehaviour { get; }
+        bool Throwed { get; set; }
+
         void Action();
     }
 }
