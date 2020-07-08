@@ -892,7 +892,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acc037059a10a334e891dd59d1118f9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minDistance: 10
+  minDistance: 20
   killParticles: {fileID: 8812558726075968770, guid: c36575f54c9ca4f4a8bc111baec2dc25,
     type: 3}
   shootPos: {fileID: 7516268546126233161}

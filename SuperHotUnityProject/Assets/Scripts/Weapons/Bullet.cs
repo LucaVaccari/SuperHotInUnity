@@ -12,9 +12,8 @@ namespace Digital.Weapons
         }
         public Type type;
 
-        [SerializeField] float force;
-
-        Rigidbody rb;
+        [SerializeField] private float force;
+        private Rigidbody rb;
 
         [HideInInspector] public Vector3 direction;
 
@@ -30,13 +29,14 @@ namespace Digital.Weapons
             if (collision.collider.CompareTag("Enemy") && type == Type.PLAYER)
             {
                 collision.collider.GetComponent<Enemy>().Kill();
-                Destroy(gameObject);
             }
             else if (collision.collider.CompareTag("Player") && type == Type.ENEMY)
             {
                 GameManager.ins.Lose();
-                Destroy(gameObject);
             }
+
+            if (!(collision.collider.CompareTag("Enemy") && type == Type.ENEMY))
+                Destroy(gameObject);
 
         }
     }

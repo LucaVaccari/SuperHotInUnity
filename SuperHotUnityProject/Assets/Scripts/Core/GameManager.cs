@@ -1,5 +1,7 @@
-﻿using Digital.Utils;
+﻿using Digital.Core.Player;
+using Digital.Utils;
 using UnityEngine;
+using UnityStandardAssets.Characters.FirstPerson;
 
 namespace Digital.Core
 {
@@ -12,6 +14,8 @@ namespace Digital.Core
         {
             Debug.Log("Lose");
             Time.timeScale = 0;
+            player.GetComponent<WeaponHolder>().enabled = false;
+            player.GetComponent<FirstPersonController>().enabled = false;
         }
     }
 }
