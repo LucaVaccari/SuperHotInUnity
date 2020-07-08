@@ -43,6 +43,7 @@ namespace Digital.Core.Player
         {
             currentWeapon.MonoBehaviour.transform.parent = null;
             currentWeapon.MonoBehaviour.GetComponent<Rigidbody>().isKinematic = false;
+            currentWeapon.MonoBehaviour.transform.position = GameManager.ins.cam.position + GameManager.ins.cam.forward;
             currentWeapon.MonoBehaviour.GetComponent<Rigidbody>().AddForce(GameManager.ins.cam.forward * throwForce * Time.unscaledDeltaTime, ForceMode.VelocityChange);
             currentWeapon.Throwed = true;
             currentWeapon = null;

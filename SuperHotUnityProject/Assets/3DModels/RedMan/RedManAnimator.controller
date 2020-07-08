@@ -1,5 +1,20 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6222816361109626286
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b3479e7ee4e2b248925d1f8de272e9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 8150781289118866053, guid: 30a6c4a3b73b6c3449eb7284e5104c1a,
+    type: 3}
+  bulletForce: 1000
 --- !u!91 &9100000
 AnimatorController:
   m_ObjectHideFlags: 0
@@ -14,7 +29,7 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -40,7 +55,8 @@ AnimatorState:
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 6619678490377436156}
-  m_StateMachineBehaviours: []
+  m_StateMachineBehaviours:
+  - {fileID: -6222816361109626286}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -49,8 +65,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -203655887218126122, guid: 8688a1766da81bd4e938c639d1d774cf,
-    type: 3}
+  m_Motion: {fileID: 7400000, guid: 569ab250f2e46454d8da408ca16815e4, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -70,15 +85,15 @@ AnimatorStateMachine:
     m_Position: {x: 361.16516, y: 133.30624, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1556407421032506699}
-    m_Position: {x: 611.1022, y: 156.33955, z: 0}
+    m_Position: {x: 610, y: 130, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
   m_StateMachineTransitions: {}
   m_StateMachineBehaviours: []
-  m_AnyStatePosition: {x: 50, y: 20, z: 0}
+  m_AnyStatePosition: {x: 270, y: 10, z: 0}
   m_EntryPosition: {x: 50, y: 120, z: 0}
-  m_ExitPosition: {x: 800, y: 120, z: 0}
+  m_ExitPosition: {x: 660, y: 10, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: 6928333241989434846}
 --- !u!1101 &6276933313561434811
@@ -98,9 +113,9 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.25
+  m_TransitionDuration: 0.13761547
   m_TransitionOffset: 0
-  m_ExitTime: 0.6428572
+  m_ExitTime: 0.6328229
   m_HasExitTime: 0
   m_HasFixedDuration: 1
   m_InterruptionSource: 0

@@ -1,9 +1,17 @@
-﻿using UnityEngine;
+﻿using Digital.AI;
+using Digital.Core;
+using UnityEngine;
 
 namespace Digital.Weapons
 {
     public class Bullet : MonoBehaviour
     {
+        public enum Type
+        {
+            PLAYER, ENEMY
+        }
+        public Type type;
+
         [SerializeField] float force;
 
         Rigidbody rb;
@@ -19,7 +27,17 @@ namespace Digital.Weapons
 
         private void OnCollisionEnter(Collision collision)
         {
-            Destroy(gameObject);
+            if (collision.collider.CompareTag("Enemy") && type == Type.PLAYER)
+            {
+                collision.collider.GetComponent<Enemy>().Kill();
+                Destroy(gameObject);
+            }
+            else if (collision.collider.CompareTag("Player") && type == Type.ENEMY)
+            {
+                GameManager.ins.Lose();
+                Destroy(gameObject);
+            }
+
         }
     }
 }

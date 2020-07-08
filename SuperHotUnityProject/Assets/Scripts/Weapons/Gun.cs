@@ -1,4 +1,5 @@
-﻿using Digital.Core;
+﻿using Digital.AI;
+using Digital.Core;
 using UnityEngine;
 
 namespace Digital.Weapons
@@ -25,6 +26,10 @@ namespace Digital.Weapons
         {
             if (Throwed)
             {
+                if (collision.collider.CompareTag("Enemy"))
+                {
+                    collision.collider.GetComponent<Enemy>().Kill();
+                }
                 Instantiate(throwParticles, transform.position, Quaternion.identity);
                 Destroy(gameObject);
             }

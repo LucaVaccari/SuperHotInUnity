@@ -204,6 +204,9 @@ MonoBehaviour:
   weaponMask:
     serializedVersion: 2
     m_Bits: 512
+  everythingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
   throwForce: 3500
 --- !u!1 &100002
 GameObject:
