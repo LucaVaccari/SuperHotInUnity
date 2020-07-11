@@ -1,5 +1,5 @@
 ﻿using Digital.AI;
-using Digital.Core;
+using Digital.Core.Managers;
 using UnityEngine;
 
 namespace Digital.Weapons
@@ -8,6 +8,7 @@ namespace Digital.Weapons
     {
         [SerializeField] private GameObject bulletPrefab;
         [SerializeField] private GameObject throwParticles;
+        [SerializeField] private AK.Wwise.Event shootSoundEvent;
 
         private float bullets = 5;
 
@@ -20,8 +21,11 @@ namespace Digital.Weapons
             if(bullets > 0)
             {
                 //play shoot animation
-                //play shoot sound
+
+                shootSoundEvent.Post(AudioManager.ins.gameObject);
+
                 //instantiate particles
+
                 GameObject bulletIns = Instantiate(bulletPrefab, GameManager.ins.cam.position + GameManager.ins.cam.forward * 2, GameManager.ins.cam.rotation);
                 bulletIns.GetComponent<Bullet>().direction = GameManager.ins.cam.forward;
                 bullets--;

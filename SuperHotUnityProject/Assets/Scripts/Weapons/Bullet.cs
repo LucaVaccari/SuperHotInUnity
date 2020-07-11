@@ -1,5 +1,5 @@
 ﻿using Digital.AI;
-using Digital.Core;
+using Digital.Core.Managers;
 using UnityEngine;
 
 namespace Digital.Weapons

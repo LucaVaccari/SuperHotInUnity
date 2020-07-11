@@ -1,6 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{64752593-951B-4FA8-9C03-C88AA023E275}" SchemaVersion="97">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{64752593-951B-4FA8-9C03-C88AA023E275}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{64752593-951B-4FA8-9C03-C88AA023E275}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="gunShot" ID="{CB956D99-F315-4804-A482-A62D1129FC8F}" ShortID="565428928">
+					<PropertyList>
+						<Property Name="Lowpass" Type="int16">
+							<RTPCList>
+								<RTPC Name="" ID="{F752BCF7-5F33-4D04-8E24-8ECBEEE767CA}" ShortID="997670978">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Timescale" ID="{6CFC1083-2F5B-4480-92C1-B57ADD51D642}" WorkUnitID="{5EBC2C97-6450-4685-9B59-D1C3A2767BF7}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{D588BDE9-0938-448F-BD3F-7F52B0B6CB9D}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="65537"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>56</YPos>
+												<Flags>5</Flags>
+												<SegmentShape>Exp3</SegmentShape>
+											</Point>
+											<Point>
+												<XPos>1</XPos>
+												<YPos>-100</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>3</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554921E8-ABCC-4135-9010-C0CF5B4B833E}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0C0A92ED-A936-4CC7-AEFA-4D88BFEE4D98}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="gunShot" ID="{901E4FD9-4C40-4253-BB11-1B154380A0CA}">
+							<Language>SFX</Language>
+							<AudioFile>gunShot.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="1043481252"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="gunShot" ID="{901E4FD9-4C40-4253-BB11-1B154380A0CA}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

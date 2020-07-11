@@ -1,5 +1,6 @@
 ﻿using Digital.Utils;
 using UnityEngine;
+using Digital.Core.Managers;
 
 namespace Digital.Core.Player
 {

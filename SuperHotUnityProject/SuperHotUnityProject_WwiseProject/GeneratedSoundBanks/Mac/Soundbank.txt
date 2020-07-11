@@ -1,0 +1,12 @@
+Event	ID	Name			Wwise Object Path	Notes
+	906516124	PlayShotSFX			\Default Work Unit\PlayShotSFX	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	4070528516	Timescale			\Default Work Unit\Timescale	
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	1043481252	gunShot	D:\luca\Luca\Personali\Videogiochi\Miei\Unity\Progetti\SuperHot\SuperHotUnityProject\SuperHotUnityProject_WwiseProject\.cache\Mac\SFX\gunShot_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\gunShot		78090
+

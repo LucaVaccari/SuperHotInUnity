@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{B9F0CB2C-9694-4468-8702-85C0F98DC809}" SchemaVersion="97">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{B9F0CB2C-9694-4468-8702-85C0F98DC809}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{B9F0CB2C-9694-4468-8702-85C0F98DC809}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Soundbank" ID="{EEDD013F-2E54-4992-859C-837715AC4337}">
+					<PropertyList>
+						<Property Name="Maximum" Type="int32">
+							<ValueList>
+								<Value>79000</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ObjectInclusionList>
+						<ObjectRef Name="Default Work Unit" ID="{63F5FB2B-E0F2-4212-863C-B780B33423DE}" WorkUnitID="{63F5FB2B-E0F2-4212-863C-B780B33423DE}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Default Work Unit" ID="{BE0E7752-E675-4418-ADCE-71F1A40303CE}" WorkUnitID="{BE0E7752-E675-4418-ADCE-71F1A40303CE}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Default Work Unit" ID="{0C0A92ED-A936-4CC7-AEFA-4D88BFEE4D98}" WorkUnitID="{0C0A92ED-A936-4CC7-AEFA-4D88BFEE4D98}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Default Work Unit" ID="{6989D5F8-63D9-4CEA-AE46-6E49F6315F21}" WorkUnitID="{6989D5F8-63D9-4CEA-AE46-6E49F6315F21}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Default Work Unit" ID="{64752593-951B-4FA8-9C03-C88AA023E275}" WorkUnitID="{64752593-951B-4FA8-9C03-C88AA023E275}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundBanks>
 </WwiseDocument>

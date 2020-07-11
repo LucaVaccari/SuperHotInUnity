@@ -12,14 +12,106 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dc9afdebb515bd45a508d94254f6f6c, type: 3}
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
-  AcousticTextureWwu: []
-  AuxBusWwu: []
-  BankWwu: []
-  EventWwu: []
-  RtpcWwu: []
-  StateWwu: []
-  SwitchWwu: []
-  TriggerWwu: []
-  ExpandedItems: []
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: e9b0bda998a0474495589df048acc1a1
+    GuidInternal: 
+    m_lastTime: -8586071590964258776
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: ed920a0c36a9c74caefa4d88bfee4d98
+    GuidInternal: 
+    m_lastTime: -8586071590964848763
+    List:
+    - name: Master Audio Bus
+      guid: d8a41415a61d2a41a17e75ca0c2149f3
+      id: 3803692087
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: 2ccbf0b994966844870285c0f98dc809
+    GuidInternal: 
+    m_lastTime: -8586071580048972580
+    List:
+    - name: Soundbank
+      guid: 3f01ddee542e9249859c837715ac4337
+      id: 1661994096
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Soundbank
+        ObjectType: 7
+      Path: Default Work Unit\Soundbank
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: 52770ebe75e61844adce71f1a40303ce
+    GuidInternal: 
+    m_lastTime: -8586071581229412581
+    List:
+    - name: PlayShotSFX
+      guid: 23baf5cba002df4d8f89a2856e00eb9b
+      id: 906516124
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PlayShotSFX
+        ObjectType: 3
+      Path: Default Work Unit\PlayShotSFX
+      maxAttenuation: 0
+      maxDuration: 883923
+      minDuration: 883923
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: 972cbc5e506485469b59d1c3a2767bf7
+    GuidInternal: 
+    m_lastTime: -8586071581651334287
+    List:
+    - name: Timescale
+      guid: 8310fc6c5b2f804492c1b57add51d642
+      id: 4070528516
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Timescale
+        ObjectType: 13
+      Path: Default Work Unit\Timescale
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: d07764a4468e2146848c0e7a41718fbb
+    GuidInternal: 
+    m_lastTime: -8586071590964528755
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: 96e4d5c61ce97540a0bb4a8087ce6185
+    GuidInternal: 
+    m_lastTime: -8586071590964558788
+    List: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: 28af84eec1cb8541959d75607c578463
+    GuidInternal: 
+    m_lastTime: -8586071590964408787
+    List: []
+  ExpandedItems:
+  - /SuperHotUnityProject_WwiseProject
+  - /SuperHotUnityProject_WwiseProject/Events
+  - /SuperHotUnityProject_WwiseProject/Events/Default Work Unit
+  - /SuperHotUnityProject_WwiseProject/SoundBanks
+  - /SuperHotUnityProject_WwiseProject/SoundBanks/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

@@ -1,4 +1,4 @@
-﻿using Digital.Core;
+﻿using Digital.Core.Managers;
 using UnityEngine;
 using UnityEngine.AI;
 

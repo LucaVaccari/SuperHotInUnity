@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{5EBC2C97-6450-4685-9B59-D1C3A2767BF7}" SchemaVersion="97">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{5EBC2C97-6450-4685-9B59-D1C3A2767BF7}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{5EBC2C97-6450-4685-9B59-D1C3A2767BF7}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="Timescale" ID="{6CFC1083-2F5B-4480-92C1-B57ADD51D642}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>
