@@ -14,6 +14,27 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="PlayMainTheme" ID="{735D5003-5174-4B23-BEAB-F824834D0606}">
+					<ChildrenList>
+						<Action Name="" ID="{DEC0018C-6884-42CC-A19F-FDA6DC58DA4D}" ShortID="1012004042">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MainTheme" ID="{6F5BB3D8-B214-4F29-9ACA-B67017498C29}" WorkUnitID="{63F5FB2B-E0F2-4212-863C-B780B33423DE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="StopEverything" ID="{745A0003-60D9-416D-9283-72E0BE08AFBF}">
+					<ChildrenList>
+						<Action Name="" ID="{D6B63554-F939-4685-A0C9-F6DE8FDB87EC}" ShortID="520148651">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

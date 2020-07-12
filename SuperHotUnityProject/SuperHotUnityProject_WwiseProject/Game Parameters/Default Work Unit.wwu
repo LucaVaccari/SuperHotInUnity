@@ -7,6 +7,8 @@
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="1"/>
 						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+						<Property Name="SlewRateUp" Type="Real64" Value="57"/>
 					</PropertyList>
 				</GameParameter>
 			</ChildrenList>

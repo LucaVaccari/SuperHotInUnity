@@ -21,7 +21,7 @@ namespace Digital.Weapons
         {
             rb = GetComponent<Rigidbody>();
 
-            rb.AddForce(direction * force * Time.fixedUnscaledDeltaTime, ForceMode.Force);
+            rb.AddForce(direction * force * Time.fixedUnscaledDeltaTime * 100, ForceMode.Force);
         }
 
         private void OnCollisionEnter(Collision collision)

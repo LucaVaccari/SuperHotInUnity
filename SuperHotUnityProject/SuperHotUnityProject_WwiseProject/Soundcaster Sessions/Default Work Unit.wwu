@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{442ECD16-87D1-4EF5-9303-3B33669B37EF}" SchemaVersion="97">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{442ECD16-87D1-4EF5-9303-3B33669B37EF}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{442ECD16-87D1-4EF5-9303-3B33669B37EF}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="New Soundcaster Session" ID="{292E7731-1E6C-408D-8ABC-F982C441ED44}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="PlayMainTheme" ID="{735D5003-5174-4B23-BEAB-F824834D0606}" WorkUnitID="{BE0E7752-E675-4418-ADCE-71F1A40303CE}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="StopEverything" ID="{745A0003-60D9-416D-9283-72E0BE08AFBF}" WorkUnitID="{BE0E7752-E675-4418-ADCE-71F1A40303CE}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Timescale" ID="{6CFC1083-2F5B-4480-92C1-B57ADD51D642}"/>
+							<Value>1</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

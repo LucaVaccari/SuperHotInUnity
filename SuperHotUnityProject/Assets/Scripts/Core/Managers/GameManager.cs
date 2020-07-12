@@ -10,7 +10,7 @@ namespace Digital.Core.Managers
     {
         public Transform cam;
         public Transform player;
-        bool lost = false;
+        private bool lost = false;
 
         private void Update()
         {
@@ -25,7 +25,7 @@ namespace Digital.Core.Managers
 
         public void Lose()
         {
-            Time.timeScale = .05f;
+            Time.timeScale = .01f;
             player.GetComponent<WeaponHolder>().enabled = false;
             player.GetComponent<FirstPersonController>().enabled = false;
             lost = true;

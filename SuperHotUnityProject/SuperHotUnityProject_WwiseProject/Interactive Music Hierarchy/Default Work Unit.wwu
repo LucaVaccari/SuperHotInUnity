@@ -1,6 +1,148 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{63F5FB2B-E0F2-4212-863C-B780B33423DE}" SchemaVersion="97">
 	<InteractiveMusic>
-		<WorkUnit Name="Default Work Unit" ID="{63F5FB2B-E0F2-4212-863C-B780B33423DE}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{63F5FB2B-E0F2-4212-863C-B780B33423DE}" PersistMode="Standalone">
+			<ChildrenList>
+				<MusicPlaylistContainer Name="MainTheme" ID="{6F5BB3D8-B214-4F29-9ACA-B67017498C29}" ShortID="940167372">
+					<PropertyList>
+						<Property Name="Lowpass" Type="int16">
+							<RTPCList>
+								<RTPC Name="" ID="{9EC3B230-B91F-4946-BF56-1D5802E76CD2}" ShortID="443810552">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Timescale" ID="{6CFC1083-2F5B-4480-92C1-B57ADD51D642}" WorkUnitID="{5EBC2C97-6450-4685-9B59-D1C3A2767BF7}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{5ADE8338-675B-4E8C-9960-22BF64D59C33}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="65537"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>78</YPos>
+												<Flags>5</Flags>
+												<SegmentShape>Exp2</SegmentShape>
+											</Point>
+											<Point>
+												<XPos>0.19974</XPos>
+												<YPos>50</YPos>
+												<Flags>0</Flags>
+												<SegmentShape>Exp3</SegmentShape>
+											</Point>
+											<Point>
+												<XPos>1</XPos>
+												<YPos>-100</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554921E8-ABCC-4135-9010-C0CF5B4B833E}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0C0A92ED-A936-4CC7-AEFA-4D88BFEE4D98}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicSegment Name="SuperHotSoundtrack-90BPM-4-4" ID="{5EC1E4E4-475F-45E1-804F-CFBC14FA93AC}" ShortID="830937903">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="74666.6666666667"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554921E8-ABCC-4135-9010-C0CF5B4B833E}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0C0A92ED-A936-4CC7-AEFA-4D88BFEE4D98}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="SuperHotSoundtrack-90BPM-4-4" ID="{9F9AC7B3-5FD2-48DD-BCDF-340CED5923DC}" ShortID="116006257">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0C0A92ED-A936-4CC7-AEFA-4D88BFEE4D98}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SuperHotSoundtrack-90BPM-4-4" ID="{39A79231-690D-486E-8EFD-71AA16EF001A}">
+											<Language>SFX</Language>
+											<AudioFile>SuperHotSoundtrack-90BPM-4-4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="549875256"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{7BB40EF8-43E6-4391-83ED-572C397F49A3}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{F60985F2-D1C6-4D79-8C74-035ABE2267F4}">
+											<ClipList>
+												<MusicClip Name="SuperHotSoundtrack-90BPM-4-4" ID="{888C5341-3197-4FA4-83C4-3B5F20EBF6FE}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="74666.6666666667"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="SuperHotSoundtrack-90BPM-4-4" ID="{39A79231-690D-486E-8EFD-71AA16EF001A}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{401E974C-7591-4166-A313-CBAA2126A54E}"/>
+								<MusicCue Name="Exit Cue" ID="{C93E5899-C2E8-44BC-9345-6614E8D01A8A}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="74666.6666666667"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
+					</ChildrenList>
+					<TransitionList>
+						<MusicTransition Name="Root" ID="{6F1791E1-7600-4430-894A-D36A6EFB2A15}">
+							<PropertyList>
+								<Property Name="IsFolder" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<MusicTransition Name="Transition" ID="{F2B58AFB-7A5B-4BAC-95A1-5EE698928754}">
+									<TransitionInfo/>
+								</MusicTransition>
+							</ChildrenList>
+							<TransitionInfo/>
+						</MusicTransition>
+					</TransitionList>
+					<Playlist>
+						<MusicPlaylistItem Name="" ID="{E3B2308D-163F-415F-A522-70F481303A45}" ShortID="109553749">
+							<PropertyList>
+								<Property Name="LoopCount" Type="int16" Value="0"/>
+							</PropertyList>
+							<ChildrenList>
+								<MusicPlaylistItem Name="" ID="{BA7C9CFC-A3A5-409A-B3DF-290581B139AA}" ShortID="38331520">
+									<PropertyList>
+										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+									</PropertyList>
+									<SegmentRef Name="SuperHotSoundtrack-90BPM-4-4" ID="{5EC1E4E4-475F-45E1-804F-CFBC14FA93AC}"/>
+								</MusicPlaylistItem>
+							</ChildrenList>
+						</MusicPlaylistItem>
+					</Playlist>
+				</MusicPlaylistContainer>
+			</ChildrenList>
+		</WorkUnit>
 	</InteractiveMusic>
 </WwiseDocument>

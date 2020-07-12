@@ -13,7 +13,9 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAYMAINTHEME = 3431436871U;
         static const AkUniqueID PLAYSHOTSFX = 906516124U;
+        static const AkUniqueID STOPEVERYTHING = 1940514798U;
     } // namespace EVENTS
 
     namespace GAME_PARAMETERS
